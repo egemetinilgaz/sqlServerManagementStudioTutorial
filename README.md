@@ -1,0 +1,2 @@
+# sqlServerManagementStudioTutorial
+ sqlServerManagementStudioTutorial

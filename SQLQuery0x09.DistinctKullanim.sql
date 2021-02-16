@@ -1,5 +1,6 @@
 use AdventureWorks2017
 --distinct kullanimi
+--distinct ifadesi tablonun belli kolonlarinda tekrar eden verilerin bir adet olacak sekilde cekilmesine olanak saglar
 select distinct Color from Production.Product
 --Production.Product icerisinde color kolonunu listeler
 
@@ -8,7 +9,8 @@ select distinct Color from Production.Product
 --select ProductID, ProductNumber, Name, Color from Production.Product calisacak
 select ProductID, ProductNumber, Name, Color from Production.Product
 where
-ProductID in --asagidaki kisim, productIDin'in bir parametresi oldu
+ProductID in 
+--asagidaki kisim, productIDin'in bir parametresi oldu
 --artik ana sorgudaki productID kismi degil burasi calisacak
 -- ProductNumber, Name, Color bunlar normal calismaya devam edecek
 (
